@@ -14,20 +14,20 @@
   </modules>
 
 <scm>
-		<connection>scm:https://github.com/Deeps333/INGFavBank.git</connection>
-		<url>https://github.com/Deeps333/INGFavBank.git</url>
-                <developerConnection>scm:git:https://github.com/Deeps333/INGFavBank.git</developerConnection>
+		<connection>scm:https://github.com/Deeps333/maven-modular.git</connection>
+		<url>https://github.com/Deeps333/maven-modular.git</url>
+                <developerConnection>scm:git:https://github.com/Deeps333/maven-modular.git</developerConnection>
 		<tag>HEAD</tag>
 		
 </scm>
 <distributionManagement>
   <repository>
     <id>nexus-releases</id>
-    <url>http://13.127.132.217:8081/nexus/content/repositories/releases</url>
+    <url>http://13.233.164.26:8081/nexus/content/repositories/releases</url>
   </repository>
   <snapshotRepository>
     <id>nexus</id>
-    <url>http://13.127.91.122:8081/nexus/content/repositories/snapshots</url>
+    <url>http://13.233.164.26:8081/nexus/content/repositories/snapshots</url>
   </snapshotRepository>
 </distributionManagement>
 
@@ -50,7 +50,7 @@
                <autoVersionSubmodules>true</autoVersionSubmodules>
                <pushChanges>false</pushChanges>
                <localCheckout>true</localCheckout>
-               <tagNameFormat>@{project.version}</tagNameFormat>
+               <tagNameFormat>v@{project.version}</tagNameFormat>
         </configuration>
       </plugin>
       
