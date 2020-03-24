@@ -12,7 +12,25 @@
     <module>module1</module>
     <module>module2</module>
   </modules>
-  
+
+<scm>
+		<connection>scm:https://github.com/Deeps333/INGFavBank.git</connection>
+		<url>https://github.com/Deeps333/INGFavBank.git</url>
+                <developerConnection>scm:git:https://github.com/Deeps333/INGFavBank.git</developerConnection>
+		<tag>HEAD</tag>
+		
+</scm>
+<distributionManagement>
+  <repository>
+    <id>nexus-releases</id>
+    <url>http://13.127.132.217:8081/nexus/content/repositories/releases</url>
+  </repository>
+  <snapshotRepository>
+    <id>nexus</id>
+    <url>http://13.127.91.122:8081/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
+</distributionManagement>
+
   <build>
     <plugins>
       <plugin>
@@ -24,6 +42,18 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>3.0.0-M1</version>
+        <configuration>
+               <autoVersionSubmodules>true</autoVersionSubmodules>
+               <pushChanges>false</pushChanges>
+               <localCheckout>true</localCheckout>
+               <tagNameFormat>@{project.version}</tagNameFormat>
+        </configuration>
+      </plugin>
+      
     </plugins>
   </build>
 </project>
