@@ -16,10 +16,9 @@ pipeline {
 	    }    }
         stage ('Update the Version')
 		{ steps {
-          sh 'git checkout -b release/v1.0.0'      
-          sh '/usr/share/maven/bin/mvn --batch-mode release:clean release:prepare release:perform -DreleaseVersion-1.0.0 -DdevelopmentVersion-1.0.0-SNAPSHOT -Dmaven.test.skip=true'
-	        sh 'sudo git add .'
-                sh 'sudo git commit -m "Updated pom" pom.xml'
+          sh 'git checkout -b release/v2.0.0'      
+          sh '/usr/share/maven/bin/mvn --batch-mode release:clean release:prepare release:perform -DreleaseVersion-2.0.0 -DdevelopmentVersion-2.0.1-SNAPSHOT -Dmaven.test.skip=true'
+	        sh 'sudo git commit -m "Updated pom" pom.xml'
                 sh 'sudo git push https://Deeps333:Deepanshu333@github.com/Deeps333/parking_backend.git HEAD:master'
                 }       }
       }
