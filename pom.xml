@@ -17,7 +17,7 @@
 		<connection>scm:https://github.com/Deeps333/maven-modular.git</connection>
 		<url>https://github.com/Deeps333/maven-modular.git</url>
                 <developerConnection>scm:git:https://github.com/Deeps333/maven-modular.git</developerConnection>
-		<tag>v2.0.5</tag>
+		<tag>v2.0.6</tag>
 		
 </scm>
 <distributionManagement>
