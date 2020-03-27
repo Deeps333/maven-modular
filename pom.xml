@@ -4,7 +4,7 @@
   
   <groupId>io.jitpack</groupId>
   <artifactId>example-root</artifactId>
-  <version>2.0.15-SNAPSHOT</version>
+  <version>2.0.16-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>example-root</name>
   
@@ -23,11 +23,11 @@
 <distributionManagement>
   <repository>
     <id>nexus-releases</id>
-    <url>http://52.66.202.44:8081/nexus/content/repositories/releases</url>
+    <url>http://13.232.181.14:8081/nexus/content/repositories/releases</url>
   </repository>
   <snapshotRepository>
     <id>nexus</id>
-    <url>http://52.66.202.44:8081/nexus/content/repositories/snapshots</url>
+    <url>http://13.232.181.14:8081/nexus/content/repositories/snapshots</url>
   </snapshotRepository>
 </distributionManagement>
 
