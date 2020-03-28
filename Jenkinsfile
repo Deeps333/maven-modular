@@ -3,9 +3,11 @@ pipeline {
    stages {
       stage('Git Checkout') {
          steps {
-            ws('/var/lib/jenkins/workspace/multi') {
-           checkout([$class: 'GitSCM', branches: scm.branches, extensions:scm.extensions + [[$class: 'dev'], [$class: 'WipeWorkspace']], doGenerateSubmoduleConfigurations: false, submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Deeps333/maven-modular.git']]])
-         }
+            ws('/var/lib/jenkins/workspace/multimodularws') {
+           
+           checkout([$class: 'GitSCM', branches: [[name: '*/dev']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[refspec: '+refs/heads/master:refs/remotes/origin/master +refs/heads/dev:refs/remotes/origin/dev', url: 'https://github.com/Deeps333/maven-modular.git']]])
+           
+          }
              }
       }
       stage ('Build Approval')
@@ -15,12 +17,12 @@ pipeline {
 
          stage ('Build')
          { steps { 
-             build 'Buildmodular'
+             build 'multimodularbuild'
          }       }
 
          stage ('Deploy SIT')
          { steps {
-             build 'DeploySITmodular'
+             build 'deploysitmultimodular'
          }       }
    
          
