@@ -4,11 +4,7 @@
   
   <groupId>io.jitpack</groupId>
   <artifactId>example-root</artifactId>
-<<<<<<< HEAD
-  <version>2.0.25</version>
-=======
   <version>2.0.26</version>
->>>>>>> release/v2.0.26~1
   <packaging>pom</packaging>
   <name>example-root</name>
   
@@ -21,11 +17,7 @@
 		<connection>scm:https://github.com/Deeps333/maven-modular.git</connection>
 		<url>https://github.com/Deeps333/maven-modular.git</url>
                 <developerConnection>scm:git:https://github.com/Deeps333/maven-modular.git</developerConnection>
-<<<<<<< HEAD
-		<tag>2.0.25</tag>
-=======
 		<tag>v2.0.26</tag>
->>>>>>> release/v2.0.26~1
 		
 </scm>
 <distributionManagement>
