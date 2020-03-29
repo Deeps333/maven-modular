@@ -4,7 +4,7 @@
   
   <groupId>io.jitpack</groupId>
   <artifactId>example-root</artifactId>
-  <version>2.0.24</version>
+  <version>2.0.25</version>
   <packaging>pom</packaging>
   <name>example-root</name>
   
@@ -17,17 +17,17 @@
 		<connection>scm:https://github.com/Deeps333/maven-modular.git</connection>
 		<url>https://github.com/Deeps333/maven-modular.git</url>
                 <developerConnection>scm:git:https://github.com/Deeps333/maven-modular.git</developerConnection>
-		<tag>2.0.24</tag>
+		<tag>2.0.25</tag>
 		
 </scm>
 <distributionManagement>
   <repository>
     <id>nexus-releases</id>
-    <url>http://13.234.78.209:8081/nexus/content/repositories/releases</url>
+    <url>http://13.234.19.110:8081/nexus/content/repositories/releases</url>
   </repository>
   <snapshotRepository>
     <id>nexus</id>
-    <url>http://13.234.78.209:8081/nexus/content/repositories/snapshots</url>
+    <url>http://13.234.19.110:8081/nexus/content/repositories/snapshots</url>
   </snapshotRepository>
 </distributionManagement>
 
