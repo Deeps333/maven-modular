@@ -22,7 +22,7 @@
 </scm>
 <distributionManagement>
   <repository>
-    <id>nexus-releases</id>
+    <id>nexus</id>
     <url>http://3.130.254.145:8081/nexus/content/repositories/releases</url>
   </repository>
   <snapshotRepository>
